@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+
+    <com.team.noty.getshowrooms.customTextView.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:id="@+id/reviews"
+        android:text="Здесь будет отзыв с апи"
+        foo:customFont="SF-UI-Display-Light.otf"/>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="11dp"
+        android:layout_marginTop="5dp"
+        android:progressDrawable="@drawable/selector_rating_bar"
+        style="@android:style/Widget.Holo.RatingBar.Small"
+        android:id="@+id/ratingBar" />
+
+
+</LinearLayout>

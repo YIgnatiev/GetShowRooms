@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chouse_city"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.team.noty.getshowrooms.ChooseCity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/group_2751"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/moscow"
+            android:text="Москва"
+            foo:customFont="SFUIDisplay-Light.otf"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            />
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/piter"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Санкт-Петербург"
+            foo:customFont="SFUIDisplay-Light.otf"
+            android:textSize="18sp"
+            />
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ecaterinburg"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:text="Екатеринбург"
+            foo:customFont="SFUIDisplay-Light.otf"
+            android:textSize="18sp"
+            />
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kiev"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:text="Киев"
+            foo:customFont="SFUIDisplay-Light.otf"
+            android:textSize="18sp"
+            />
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tbilysy"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:text="Тбилиси"
+            foo:customFont="SFUIDisplay-Light.otf"
+            android:textSize="18sp"
+            />
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/baku"
+            android:text="Баку"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            foo:customFont="SFUIDisplay-Light.otf"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/path_1101"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/path_1103"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/path_1104"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/path_1102"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/path_1105"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            foo:customFont="SFUIDisplay-Light.otf"
+            android:textSize="10sp"
+            android:text="Прочитайте"/>
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            foo:customFont="SFUIDisplay-Light.otf"
+            android:layout_height="wrap_content"
+            android:id="@+id/conditions"
+            android:text=" условия"
+            android:textSize="10sp"
+            android:textColor="#1E88E5"/>
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            foo:customFont="SFUIDisplay-Light.otf"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text=" использования приложения"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

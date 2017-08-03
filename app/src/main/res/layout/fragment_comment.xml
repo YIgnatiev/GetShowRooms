@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+    <com.team.noty.getshowrooms.customTextView.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameShowRoom"
+        foo:customFont="SF-UI-Display-Light.otf"
+        android:text="Froormsdmf"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="3dp"
+        android:id="@+id/contentRating"
+        android:layout_below="@+id/nameShowRoom"
+        android:layout_height="wrap_content">
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            foo:customFont="SF-UI-Display-Light.otf"
+            android:text="рейтинг:"
+            android:textSize="12sp"
+            />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:progressDrawable="@drawable/selector_rating_bar"
+            style="@android:style/Widget.Holo.RatingBar.Small"
+            android:id="@+id/viewRatingBar" />
+
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            foo:customFont="SF-UI-Display-Light.otf"
+            android:id="@+id/countReviews"
+            android:text="(32 отзыва)"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/textComment"
+        android:background="@drawable/text_comment_back"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="top"
+        android:padding="10dp"
+        android:text=""
+        android:layout_below="@+id/contentRating"
+        android:layout_height="200dp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textComment"
+        android:stepSize="1.0"
+        android:progressDrawable="@drawable/selector_comment_rating_bar"
+        style="@android:style/Widget.Holo.Light.RatingBar"
+        android:id="@+id/ratingBar"
+        android:layout_marginBottom="15dp"/>
+    
+    <com.team.noty.getshowrooms.customTextView.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:background="@drawable/back_button"
+        android:layout_centerHorizontal="true"
+        foo:customFont="SF-UI-Display-Light.otf"
+        android:paddingTop="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:paddingBottom="8dp"
+        android:id="@+id/review"
+        android:textColor="@color/white"
+        android:text="Оставить отзыв"
+        android:textSize="17sp"
+        />
+
+    <com.team.noty.getshowrooms.customTextView.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/review"
+        android:layout_centerHorizontal="true"
+        foo:customFont="SF-UI-Display-Light.otf"
+        android:gravity="center"
+        android:text="Ваш отзыв будет опубликован после проверки"
+        android:textSize="13sp"
+        />
+    </RelativeLayout>
+
+</ScrollView>

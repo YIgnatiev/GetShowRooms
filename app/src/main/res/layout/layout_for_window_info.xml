@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@drawable/backsearch"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:id="@+id/info"
+        android:background="@drawable/back_info"
+        android:layout_height="80dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/info"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/arrow"
+        android:layout_toRightOf="@+id/content_info"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/group_506"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/content_info"
+        android:layout_toRightOf="@+id/info"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameShowRoom"
+            android:text="Leform"
+            android:textSize="18sp"
+            android:textColor="#000"
+            foo:customFont="SF-UI-Display-Light.otf"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:progressDrawable="@drawable/selector_rating_bar"
+                style="@android:style/Widget.Holo.RatingBar.Small"
+                android:id="@+id/ratingBar" />
+
+            <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/review"
+                android:layout_gravity="center"
+                android:text="32 jnpsdf"
+                foo:customFont="SF-UI-Display-Light.otf"/>
+
+
+        </LinearLayout>
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:layout_marginTop="5dp"
+            android:numStars="4"
+            android:stepSize="1"
+            android:progressDrawable="@drawable/selector_ruble_bar"
+            style="@android:style/Widget.Holo.RatingBar.Small"
+            android:id="@+id/ruble" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

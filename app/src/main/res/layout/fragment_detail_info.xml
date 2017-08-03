@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameShowRoom"
+                    foo:customFont="SF-UI-Display-Light.otf"
+                    android:text="Froormsdmf"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content">
+                    <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        foo:customFont="SF-UI-Display-Light.otf"
+                        android:text="рейтинг:"
+                        android:textSize="12sp"
+                        />
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="11dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:progressDrawable="@drawable/selector_rating_bar"
+                        android:layout_marginRight="10dp"
+                        style="@android:style/Widget.Holo.RatingBar.Small"
+                        android:id="@+id/ratingBar" />
+
+                    <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        foo:customFont="SF-UI-Display-Light.otf"
+                        android:textColor="#66c3e8"
+                        android:id="@+id/countReviews"
+                        android:text="32 отзыва"
+                        android:textSize="12sp"
+                        />
+                </LinearLayout>
+                <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    foo:customFont="SF-UI-Display-Light.otf"
+                    android:textColor="@color/main_color"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/instagram"
+                    android:text="32 отзыва"
+                    android:textSize="12sp"
+                    />
+
+                <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    foo:customFont="SF-UI-Display-Light.otf"
+                    android:textColor="@color/main_color"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/facebook"
+                    android:text="32 отзыва"
+                    android:textSize="12sp"
+                    />
+
+                <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    foo:customFont="SF-UI-Display-Light.otf"
+                    android:id="@+id/description"
+                    android:text="Здесь будет описание с апиЗдесь будет описание с апиЗдесь будет описание с апиЗдесь будет описание с апиЗдесь будет описание с апиЗдесь будет описание с апиЗдесь будет описание с апиЗдесь будет описание с апиЗдесь будет описание с апи"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/viewOnMap"
+                    android:src="@drawable/group_2"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/call"
+                    android:src="@drawable/call_1"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/like"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/call"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/viewReviews"
+                    android:src="@drawable/mobile"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/grid_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:numColumns="2"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:columnWidth="90dp"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:gravity="center"
+            android:stretchMode="columnWidth" >
+        </GridView>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:id="@+id/image1"
+                    android:src="@drawable/asortiment"/>
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:scaleType="centerInside"
+                    android:id="@+id/image2"
+                    android:layout_weight="1"
+                    android:src="@drawable/asortiment"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:scaleType="centerInside"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    android:id="@+id/image3"
+
+                    android:src="@drawable/asortiment"/>
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:id="@+id/image4"
+                    android:scaleType="centerInside"
+                    android:layout_weight="1"
+                    android:src="@drawable/asortiment"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/station"
+                android:text="м. Арбатская"
+                foo:customFont="SF-UI-Display-Light.otf"/>
+            <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/address"
+                android:text="ул. Поварская, д. 32"
+                foo:customFont="SF-UI-Display-Light.otf"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/workTime"
+                    android:layout_weight="1"
+                    android:text="Сегодня открыто до 23:00"
+                    foo:customFont="SF-UI-Display-Light.otf"/>
+
+              <!--  <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/direction"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="2 km. 300 m."
+                    android:textColor="@color/main_color"
+                    foo:customFont="SF-UI-Display-Light.otf"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="20dp"
+                    android:src="@drawable/group_2"
+                    android:id="@+id/imageView" />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

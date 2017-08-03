@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_rools_to_use_app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.team.noty.getshowrooms.RoolsToUseApp"
+    tools:showIn="@layout/activity_rools_to_use_app">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/group_3"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/contentLine"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_height="match_parent">
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            app:customFont="SF-UI-Display-Light.otf"
+            android:layout_height="wrap_content"
+            android:text="@string/rools_to_use"/>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/contentLine"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/path_1101"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/path_1103"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/path_1104"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/path_1102"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/path_1105"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

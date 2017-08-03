@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.team.noty.getshowrooms.customTextView.TextViewPlus
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:textSize="16sp"
+        foo:customFont="SF-UI-Display-Light.otf"
+        android:text="TextView">
+    </com.team.noty.getshowrooms.customTextView.TextViewPlus>
+</LinearLayout>

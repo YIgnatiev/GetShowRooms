@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.team.noty.getshowrooms.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/group_2751"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hanger"
+        android:layout_centerInParent="true"
+        android:src="@drawable/path_1035"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="45dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/group_2734"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/beside"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/group_2732"
+                android:layout_gravity="center"
+                android:id="@+id/top"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/group_2729"
+                android:layout_gravity="center"
+                android:id="@+id/liked"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/group_2730"
+                android:id="@+id/search"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/lineContent"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            foo:customFont="SFUIDisplay-Light.otf"
+            android:textSize="13sp"
+            android:text="Прочитайте"/>
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            foo:customFont="SFUIDisplay-Light.otf"
+            android:layout_height="wrap_content"
+            android:id="@+id/conditions"
+            android:text=" условия"
+            android:textSize="13sp"
+            android:textColor="#1E88E5"/>
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            foo:customFont="SFUIDisplay-Light.otf"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text=" использования приложения"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

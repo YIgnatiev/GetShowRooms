@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+    <com.team.noty.getshowrooms.customTextView.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameShowRoom"
+        foo:customFont="SF-UI-Display-Light.otf"
+        android:text="Froormsdmf"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="3dp"
+        android:id="@+id/contentRating"
+        android:layout_below="@+id/nameShowRoom"
+        android:layout_height="wrap_content">
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            foo:customFont="SF-UI-Display-Light.otf"
+            android:text="рейтинг:"
+            android:textSize="12sp"
+            />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:progressDrawable="@drawable/selector_rating_bar"
+            android:layout_marginRight="10dp"
+            style="@android:style/Widget.Holo.RatingBar.Small"
+            android:id="@+id/ratingBar" />
+
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            foo:customFont="SF-UI-Display-Light.otf"
+            android:id="@+id/countReviews"
+            android:text="(32 отзыва)"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/contentRating"
+        android:layout_above="@+id/comment"
+        android:layout_height="match_parent"
+        android:id="@+id/resultList"/>
+
+        <com.team.noty.getshowrooms.customTextView.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_back"
+            foo:customFont="SF-UI-Display-Light.otf"
+            android:paddingTop="8dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:id="@+id/comment"
+            android:textColor="#66c3e8"
+            android:text="Оставить отзыв"
+            android:textSize="16sp"
+            />
+</RelativeLayout>

@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.team.noty.getshowrooms.fragment.FavoritesFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/filter"
+                android:layout_marginBottom="40dp"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lineContentCity"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/titleCity"
+                    android:text="@string/city"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    foo:customFont="SF-UI-Display-Light.otf"/>
+
+                <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/city"
+                    android:gravity="end"
+                    android:text="Не важно"
+                    android:textColor="#cfcfcf"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15sp"
+                    foo:customFont="SF-UI-Display-Light.otf"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/group_506"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="#ededed"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/lineContentRegion"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/titleRegion"
+                    android:textColor="#000"
+                    android:text="@string/region"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    foo:customFont="SF-UI-Display-Light.otf"/>
+
+                <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/region"
+                    android:textColor="#cfcfcf"
+                    android:text="Не важно"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15sp"
+                    foo:customFont="SF-UI-Display-Light.otf"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/group_506"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="#cfcfcf"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/lineContentUnderground"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/titleUnderGround"
+                    android:textColor="#000"
+                    android:text="@string/underground_station"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    foo:customFont="SF-UI-Display-Light.otf"/>
+
+                <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/underGroundStation"
+                    android:text="Не важно"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:gravity="end"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textColor="#cfcfcf"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15sp"
+                    foo:customFont="SF-UI-Display-Light.otf"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/group_506"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="#cfcfcf"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lineContentPrice"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/titlePrice"
+                    android:textColor="#000"
+                    android:text="@string/price"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    foo:customFont="SF-UI-Display-Light.otf"/>
+
+                <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/price"
+                    android:textColor="#cfcfcf"
+                    android:text="Не важно"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15sp"
+                    foo:customFont="SF-UI-Display-Light.otf"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/group_506"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="#ededed"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lineContentWorkTime"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/titleWorkTime"
+                    android:text="@string/work_time"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    foo:customFont="SF-UI-Display-Light.otf"/>
+
+                <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/workTime"
+                    android:text="Не важно"
+                    android:textColor="#cfcfcf"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15sp"
+                    foo:customFont="SF-UI-Display-Light.otf"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/group_506"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="#cfcfcf"
+                android:layout_height="1dp" />
+            </LinearLayout>
+
+
+            <com.team.noty.getshowrooms.customTextView.TextViewPlus
+                android:layout_width="140dp"
+                foo:customFont="SF-UI-Display-Light.otf"
+                android:background="@drawable/back_button"
+                android:layout_height="50dp"
+                android:id="@+id/buttonResult"
+                android:text="Найдено 0"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
